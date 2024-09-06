@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tugas 2</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container div {
+			margin-right: 10px;
+		}
+		.container div:last-child {
+			flex-basis: 100%;
+		}
+		body { background-color: gainsboro; }
+		fieldset {
+			border: 2px solid red;
+		}
+		legend {
+			color: red;
+		}
+		table {
+			background-color: white;
+			color: black;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<form action="#">
+		<fieldset>
+			<legend>Akun</legend>
+			<table>
+				<tr>
+					<td><label for="uname">Username</label></td>
+					<td><input type="text" id="uname" placeholder="Enter Username" name="username" required><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="pass">Password</label></td>
+					<td><input type="password" id="pass" name="password" placeholder="Enter Password" required><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="cpass">Confirm Password</label></td>
+					<td><input type="password2" id="pass2" placeholder="Confirm Password" name="password" required><br>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="email">E-mail</label></td>
+					<td><input type="email" placeholder="Enter E-Mail" required></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Daftar">
+						<input type="reset" value="Reset">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	<form action="#">
+		<fieldset>
+			<legend>Data</legend>
+			<table>
+				<tr>
+					<td><label for="uname">Nama</label></td>
+					<td><input type="text" id="uname" placeholder="Masukkan Nama" name="username"><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="gender">Jenis Kelamin</label></td>
+					<td class="flex-row"><br>
+						<input type="radio" id ="lk" name="jk" value="Laki-Laki"><label for="man">Laki-Laki</label><br>
+						<input type="radio" id ="pr" name="jk" value="Perempuan"><label for="woman">Perempuan</label>
+						<br><br>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="info">Pilih Konten Yang <br> Menarik Menurut Kamu!</label></td>
+					<td class="flex-row"><br>
+						<input type="checkbox" name="sport"><label for="or">Olahraga</label><br>
+						<input type="checkbox" name="martial arts"><label for="or">Latihan Bela Diri</label><br>
+						<input type="checkbox" name="gaming"><label for="or">Gaming</label><br>
+						<input type="checkbox" name="film&music"><label for="tv">Film dan Musik</label><br>
+						<input type="checkbox" name="foods"><label for="kh">Makanan</label><br>
+						<input type="checkbox" name="education"><label for="kh">Edukasi</label>
+						<br><br>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="favorit">Yang Paling Kamu Sukai!</label></td>
+					<td><br>
+						<select name="Paling Disukai">
+							<option value="#">--- Pilih Salah Satu ---</option>
+							<option value="sport">Olahraga</option>
+							<option value="martial arts">Latihan Bela Diri</option>
+							<option value="gaming">Gaming</option>
+							<option value="film&music">Film dan Musik</option>
+							<option value="foods">Makanan</option>
+							<option value="education">Edukasi</option>
+						</select>
+						<br><br>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="moto">Moto Hidup</label></td>
+					<td>
+						<textarea name="moto" id="moto" placeholder="Isi Moto Hidup Kamu" rows="5" cols="20"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	<div class="container">
+		<div>
+			<p>Olahraga!</p>
+			<img src="nichijou sport.gif" alt="Olahraga">
+		</div>
+		<div>
+			<p>Bela Diri!</p>
+			<img src="nichijou fight.gif" alt="Bela Diri">
+		</div>
+		<div>
+			<p>Gaming!</p>
+			<img src="world god only knows keima katsuragi speed.gif" alt="Gaming">
+		</div>
+		<div>
+			<p>Film dan Musik!</p>
+			<img src="kimi no nawa.gif" alt="Film dan Musik">
+		</div>
+		<div>
+			<p>Makanan!</p>
+			<img src="anime-ramen.gif" alt="Makanan">
+		</div>
+		<div>
+			<p>Edukasi!</p>
+			<img src="daily lives tadakuni with a girl.gif" alt="Edukasi">
+		</div>
+</body>
+
+</html>
